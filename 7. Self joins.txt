@@ -1,0 +1,13 @@
+SELECT e.ename employee, m.ename manager 	// names of employees and their managers
+FROM emp e, emp m 	// develop that your choosing from the same table and splitting into 'e' and 'm'
+WHERE e.mgr = m.empno 	// employees mgr number is equivalent to managers emp number
+
+-SELF JOIN: JOINING A TABLE WITH ITSELF
+
+The basic syntax of SELF JOIN is as follows −
+
+SELECT a.column_name, b.column_name...
+FROM table1 a, table1 b
+WHERE a.common_field = b.common_field;
+
+Here, the WHERE clause could be any given expression based on your requirement.
